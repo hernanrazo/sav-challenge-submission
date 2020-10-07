@@ -43,6 +43,7 @@ def main():
 
     #dissect the given domain by removing protocol and www.
     domain_input = domain_input.replace('http://', '')
+    domain_input = domain_input.replace('https://', '')
     domain_input = domain_input.replace('www.', '')
     domain_input = domain_input + '\r\n'
 
