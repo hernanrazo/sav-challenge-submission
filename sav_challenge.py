@@ -29,6 +29,7 @@ def get_domain_info(domain_name):
     #send domain to server
     conn.send(str.encode(domain_name))
 
+    #return information as binary object
     chunk = conn.recv(1024)
     chunks.append(chunk)
 
